@@ -1,0 +1,7 @@
+apiversion: v2
+name: "go-rest-api"
+version: 1.0.0
+maintainers:
+  - name: "Piyush"
+    email: "piyush@appscode.com"
+appVersion: "1"
