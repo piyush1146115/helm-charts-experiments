@@ -7,10 +7,10 @@ metadata:
 spec:
   selector:
 {{- include "labels" . | nindent 4 }}
-    {{- with .Values.Service}}
-    type: {{ .Type }}
-    ports:
-      - port: {{ .Port }}
-        targetPort: {{ .TargetPort }}
-        nodePort: {{ .NodePort }}
-    {{- end}}    
+  {{- with .Values.Service}}
+  type: {{ .Type }}
+  ports:
+    - port: {{ .Port }}
+      targetPort: {{ .TargetPort }}
+      nodePort: {{ .NodePort }}
+  {{- end}}    
