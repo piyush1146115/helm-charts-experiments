@@ -2,14 +2,13 @@ Deployment:
   Replicas: 2
   ContainerName: go-rest-api
   Image: piyush1146115/go-rest-api:1
-  ContainerPort: 8080
+  ContainerPort: 10000
 
 Labels:
   app: go-rest-api
 
 Service:
   Type: NodePort
-  Port: 8080
-  TargetPort: 8080
+  Port: 10000
+  TargetPort: 10000
   NodePort: 30000
-  
